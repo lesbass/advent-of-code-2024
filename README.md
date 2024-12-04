@@ -1,6 +1,6 @@
 # advent-of-code-2023
 
-Welcome to the Advent of Code[^aoc] .NET7 project created by [lesbass][github].
+Welcome to the Advent of Code[^aoc] .NET9 project created by [lesbass][github].
 
 In this repository, lesbass is about to provide solutions for the puzzles using C# language.
 
