@@ -1,4 +1,4 @@
-namespace advent_of_code_2022;
+namespace advent_of_code_2024;
 
 public static class Day01
 {
@@ -17,14 +17,11 @@ public static class Day01
             list2.Add(numeri[1]);
         }
 
-        list1 = list1.Order().ToList();    
-        list2 = list2.Order().ToList();    
-        
+        list1 = list1.Order().ToList();
+        list2 = list2.Order().ToList();
+
         var sommaDistanze = 0;
-        for (var i = 0; i < list1.Count; i++)
-        {
-            sommaDistanze += Math.Abs(list1[i] - list2[i]);
-        }
+        for (var i = 0; i < list1.Count; i++) sommaDistanze += Math.Abs(list1[i] - list2[i]);
 
         return sommaDistanze;
     }
@@ -42,8 +39,7 @@ public static class Day01
         }
 
         var similarità = list2.GroupBy(it => it).ToDictionary(it => it.Key, it => it.Count());
-        
-        return list1.Sum(it => it * (similarità.GetValueOrDefault(it, 0)));
-        
+
+        return list1.Sum(it => it * similarità.GetValueOrDefault(it, 0));
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace advent_of_code_2022;
+namespace advent_of_code_2024;
 
 public static class Utils
 {

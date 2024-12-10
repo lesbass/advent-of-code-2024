@@ -1,8 +1,8 @@
 using dotenv.net;
 using Xunit;
-using static advent_of_code_2022.Day03;
+using static advent_of_code_2024.Day03;
 
-namespace advent_of_code_2022.tests;
+namespace advent_of_code_2024.tests;
 
 public class Day03Tests
 {
